@@ -2,14 +2,15 @@ html{
    scroll-behavior: smooth;
 }
 .Portfoliocontainer{
- background-color: #E6E6FA;
+ background-color:#E6E6FA;
  border-radius: 10px;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 40%;
+  width: 97%;
   margin: auto;
-  margin-left: 20px;
-  margin-right: 15px;
+  padding-top:20px ;
+  margin-left: 8px;
+  margin-right: 10px;
 }
 .Portfoliocontainer:hover{
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
