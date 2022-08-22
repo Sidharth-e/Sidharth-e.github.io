@@ -1,6 +1,12 @@
 html{
    scroll-behavior: smooth;
 }
+.navbar li{
+   margin-left: 1em;
+   margin-right: 1em;
+
+}
+
 .Portfoliocontainer{
  background-color:#E6E6FA;
  border-radius: 10px;
@@ -110,6 +116,16 @@ i{
 }
 
 @media screen and (max-width: 760px) {
+   .navbar li{
+      margin-left: 0em;
+      margin-right: 1em;
+      margin-top: 1em;
+
+   }
+   .navbar li a i{
+      margin-right: 10px;
+
+   }
    .cover-content h1{
        font-size: 36px;
        font-weight: bold;
