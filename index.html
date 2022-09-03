@@ -11,42 +11,42 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="/css/all.min.css">
         <link rel="stylesheet" href="/css/all.css">
-        <link
     </head>
     <body data-bs-spy="scroll" data-bs-target="#nav-scroll" data-offset="56">
-        <header class="Header" id="home">
-            <nav id="nav-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container">
-                    <a href="#" class="navbar-brand">Portfolio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a href="#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#portfolio" class="nav-link"><i class="fa-solid fa-file-pen"></i> Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link"><i class="fa-regular fa-keyboard"></i> About</a>
-                            </li>
-                        </ul>
-                    </div>
+            <nav class="navbar navbar-expand-custom navbar-mainbg">
+                <a class="navbar-brand navbar-logo" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <div class="hori-selector">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home"><i class="fas fa-house-user"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio"><i class="far fa-clone"></i>Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="far fa-calendar-alt"></i>About</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-            <div class="cover container-fluid text-white">
+            <div class="cover container-fluid text-white" id="home">
                 <div class="cover-content d-flex flex-column justify-content-center align-items-center">
                   <div class="col1">
                     <h1>Hi this is Sidharth</h1>
                     <h3>R&D Developer</h3>
                     <p>I'm a developer. I spend my whole day, practically every day, experimenting with HTML, CSS,JavaScript and web framework dabbling with Python and Asp.net</p>
                     <h4>Passion comes first</h4>
-                    <a href="https://github.com/Sidharth-e/Sidharth-e.github.io/raw/main/Sidharth%20_Resume(2022).pdf" download><button type="button" class="btn transition-swipe">MyCV<i class="fa-solid fa-arrow-right"></i></button></a>
+                    <a href="Resume.pdf" download><button type="button" class="btn transition-swipe">MyCV<i class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
         <section class="container py-5" id="portfolio">
             <div class="section-title text-center pt-2">
                 <h1 class="h1 pb-2">Portfolio</h1>
-                <p class="text-muted">I got multiple opportunities to work on multiple technologies and developed application from scratch.Below are some of the projects i worked.</p>
+                <p class="text-muted">I got various opportunities to work on multiple technologies and developed application from scratch.Below are some of the projects i worked.</p>
             </div>
             <div class="row ">
                 <div class="col-lg-4 col-md-6 mb-5 Portfoliocontainer">
@@ -64,8 +64,12 @@
                         <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer">1.Host override testing</label>
                         <div class="faq-drawer__content-wrapper">
                           <div class="faq-drawer__content">
-                            <p>
-                                The application is developed as part of SRE automation .The tool is created using c# and selenium which will check the overall response time of the web page and will check for the failures across multiple servers.
+                            <p>  
+                              The application is created as part of SRE automation.
+                              The tool is created
+using c# and selenium which will check overall response time of the web
+application by host overriding through different servers and calculate the
+performance of the web site.The application helped SRE to reduce workload by 30%.
                             </p>
                           </div>
                         </div>
@@ -126,9 +130,10 @@
                         <div class="faq-drawer__content-wrapper">
                           <div class="faq-drawer__content">
                             <p>
-                                This project is created as part of SRE automation.The tool is created using asp.net .The functionality of tool is to
-                                fetch required details of member from database and api .This details will be further used to validate overall account
-                                setup and will display the result.
+                              The application is created as part of SRE automation.The application is
+                              created using asp.net.The functionality of tool is to fetch required data
+                              from database and api .This details will be further used to validate overall
+                              account setup and will display the result for working of Servicenow tickets.
                             </p>
                           </div>
                         </div>
@@ -138,8 +143,9 @@
                       <div class="faq-drawer__content-wrapper">
                         <div class="faq-drawer__content">
                           <p>
-                            The tool is created aspart of SRE automation. The tool is created to cross verify the data from vendor with data from
-                    database . The verified data report will be automatically send to vendor mail.
+                            The tool is created aspart of SRE automation. The tool is created to cross
+verify the data from vendor with data from production database .The verified data report will be automatically send to vendor mail.The application
+saved 40% of workload from SRE team.
                           </p>
                         </div>
                       </div>
@@ -149,9 +155,11 @@
                       <div class="faq-drawer__content-wrapper">
                         <div class="faq-drawer__content">
                           <p>
-                            The application is created as part of innovation team project.The application motive is predict the snowday tickets
-                    count and categorize the service now tickets.The data for traing the model is gathered from SRE team and trained the data using SARIMA and deployed the
-                    model in Flask API and created a front end client to call the api and display the result.
+                            The application is developed as part of healthcare rapid labs usercases.The application is based on AI/ML .The trained model predict theServicenow tickets count from the given time frame and categorize the
+tickets .The model is trained from the Servicenow data .The model is
+trained with SARIMA algorithm and has accuracy of 93.2% .The model is
+accessed through a Rest API which is created using flask and access the
+api through Angular js.
                           </p>
                         </div>
                       </div>
@@ -173,19 +181,117 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h2 class="text-center pt-5 pb-3">Experience</h2>
-                        <p style="text-align: justify" class="text-muted">Worked as Site reliability engineers from 18/01/2021 - 01/06/2022 in TCS HealthCare domain. Site reliability engineers sit at the crossroads of traditional IT and software development. SRE teams are made up of
-                          software engineers who build and implement software to improve the reliability of their systems
-                        <p style="text-align: justify" class="text-muted">Currently working as Developer in TCS innovation lab.TCS has a global network of innovation labs, classified as technology labs, academic alliance labs and domain labs. The labs create differentiators and build innovation capabilities for TCS's busisnesses, helping its customers with innovation across different time zones.</p>
+                        <h6>TCS</h6>
+                        <h6>Role: Developer</h6>
+                        <h6>06/06/2022 - Present</h6>
+                        <p style="text-align: justify" class="text-muted">
+                          TCS Rapid Labs aims at accelerating innovation. It solves business problems, adopting a unique rapid methodology that enables the end-to-end
+                          lifecycle of solution prototyping to move faster--from concept to design
+                          and development. The facility thus helps businesses get an early feel of
+                          innovation, and expedite decision-making processes to elevate the innovation quotient. The labs’ core focus is to build rapid prototypes using niche technologies including AI/ML, AR/VR, IoT, blockchain, and robotics.
+                        <h6>TCS innovation lab responsibilities</h6>
+                          <ul class="text-muted">
+                          <li>Time-bound resolution of customer challenges by expedited building
+                            of innovative business solutions leveraging emerging technologies.</li>
+                          <li>Speedy validation of learning in the form of proof-of-technology for
+                              business challenge.</li>
+                          <li>Leveraging repeatable processes to build innovative product and
+                            services lines.</li>
+                          <li>
+                            Creation of a robust foundation for future enterprise scale solutions.
+                          </li> 
+                          <li>
+                            Minimizing business risk and reduction in go-to-market time thus
+                            providing first-mover advantage.
+                          </li>
+                          <li>
+                            Exploring collaborative opportunities with alliance partners, and
+                            building an ecosystem of co-innovation.
+                          </li>
+                        </ul>
+                        </p>
+                        <h6>TCS</h6>
+                        <h6>Role: Site Reliability Engineer</h6>
+                        <h6>18/01/2021 - 01/06/2022</h6>
+                        <p style="text-align: justify" class="text-muted">At TCS, we’re passionate about building software 
+                          that solves problems.
+                          We count on our site reliability engineers (SREs) to empower our users
+                          with a rich feature set, high availability, and stellar performance level to
+                          pursue their missions. As we expand our customer deployments, we are
+                          currently seeking an experienced SRE to deliver insights from massive
+                          scale data in real time. Specifically, we are searching for someone who
+                          brings fresh ideas, demonstrates a unique and informed viewpoint, and
+                          enjoys collaborating with a cross-functional team to develop real-world
+                          solutions and positive user experiences at every interaction.</p>
+                        <h6>Objectives of this Role</h6>
+                        <ul class="text-muted">
+                          <li>Run the production environment by monitoring availability and taking a
+                            holistic view of system health.</li>
+                          <li>Build software and systems to manage platform infrastructure and
+                            applications.</li>
+                          <li>Improve reliability, quality, and time-to-market of our suite of software
+                            solutions.</li>
+                          <li>
+                            Measure and optimize system performance, with an eye toward
+                            pushing our capabilities forward, getting ahead of customer needs,
+                            and innovating to continually improve.
+                          </li>
+                          <li>
+                            Provide primary operational support and engineering for multiple large
+                            distributed software applications.
+                          </li>
+                        </ul>
+                        <h6>Daily and Monthly Responsibilities</h6>
+                        <ul class="text-muted">
+                          <li>Gather and analyze metrics from both operating systems and
+                            applications to assist in performance tuning and fault finding.
+                          </li>
+                          <li>
+                            Partner with development teams to improve services through rigorous
+                            testing and release procedures.
+                          </li>
+                          <li>
+                            Participate in system design consulting, platform management, and
+                            capacity planning.
+                          </li>
+                          <li>
+                            Create sustainable systems and services through automation and uplifts.
+                          </li>
+                          <li>
+                            Balance feature development speed and reliability with well-defined service level objectives.
+                          </li>
+                          <li>
+                            Working with Servicenow tickets.
+                          </li>
+                          <li>
+                            Monitor production applications to prevent from outages.
+                          </li>
+                          <li>
+                            Monitoring API, web services, DB through Splunk, Azure, Dynatrace,Bigpanda.
+                          </li>
+                          <li>
+                            SQL script preparation to resolve data discrepancy accross the system.
+                          </li>
+                          <li>
+                            Host testing of multiple servers to ensure its reliability.
+                          </li>
+                          <li>
+                            Code analysis to help development team to identify issue in production.
+                          </li>
+                          <li>
+                            Automation of daily works by creating various packags and applications.
+                          </li>
+                        </ul>
                     </div>
                     <div class="col-md-6">
                         <h3 class="text-center pt-5 pb-3">What Skills Do I Have?</h3>
                         <h6>Html:</h6>
                         <div class="progress my-2 border border-primary bg-white">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" style="width: 74%">75%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" style="width: 80%">80%</div>
                         </div>
                         <h6>Css:</h6>
                         <div class="progress my-2 border border-success bg-white">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="width: 50%">50%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="width: 70%">70%</div>
                         </div>
                         <h6>Javascript:</h6>
                         <div class="progress my-2 border border-warning bg-white">
@@ -193,7 +299,7 @@
                         </div>
                         <h6>Flask:</h6>
                         <div class="progress my-2 border border-danger bg-white">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" style="width: 20%">20%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" style="width: 60%">60%</div>
                         </div>
                         <h6>DJango:</h6>
                         <div class="progress my-2 border border-info bg-white">
@@ -217,7 +323,7 @@
                         </div>
                         <h6>Data Science:</h6>
                         <div class="progress my-2 border border-warning bg-white">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62" style="width: 62%">62%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62" style="width: 50%">50%</div>
                         </div>
                         <h6>MySql:</h6>
                         <div class="progress my-2 border border-info bg-white">
@@ -230,7 +336,7 @@
         </section>
 
         <section class="contact" id="contact">
-            <div class="container py-5">
+            <div class="py-5">
                 <div class="section-title text-left pt-2">
                     
                     <ul id="">
@@ -256,5 +362,18 @@
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"
         ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/script.js"></script>
+        <script>
+
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+        </script>
     </body>
 </html>
